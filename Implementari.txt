@@ -1,0 +1,95 @@
+K Implementari
+c++ redistributable
+TVA>- categorii Tva : I, II, II (I ÷ind max = 24, II = 9, III=0)
+TH>Taxa Hoteliera pe statiuni. Taxa de salvamont. Posibilitatea de a adauga alte taxe.
+Taxa hoteliera nu se aplica pentru:
+a) persoanele fizice Ón v‚rsta de p‚na la 18 ani inclusiv;
+b) persoanele fizice cu handicap grav sau accentuat ori persoanele invalide de gradul I sau II;
+...
+Detalii: document Taxa Hoteliera.doc
+http://legeaz.net/legea-571-2003-cod-fiscal/art-280
+Doc imp server. Extrage sau introduce date cu forta in WinMentor
+Factura
+Chitanta
+Articole
+Parteneri
+Jurnale pe clientii (pentru facturi) Doc-Imp-Server
+TH>Raport cu Taxa Hoteliera. Pe o perioada selectata, suma si/sau detaliat ce si cat este Taxa Hoteliera
+FF>Am facturat deja ce se intampla daca:
+Am 5 nopti pe factura si vreau sa modi÷c cazarea la 4 nopti
+Vreau sa schimb clientul din Modi÷ca Ocupare
+Cand nu mai pot modi÷ca factura
+FF>Daca fac mai multe facturi la un Event, ce apare pe raport?
+incasari gen jurnal
+Raport pe o zi: Suma - Cat trebuie sa plateasca(doar cazarea? sau total?)
+Achitat - Cat a platit pe evenimentul respectiv(total?)
+FF>Factura cumulata pe mai multe zile, mai multe camere
+Cumulat pentru un singur client, mai multe evenimente
+Cumulat mai multi clienti, evenimente diferite
+Pot sa am evenimente doar de cate o noapte pentru acelasi client, factura o vreau detaliata pe fiecare
+camera, sau cumulata:
+- cu numarul de nopti
+- cumulat total
+Camere preferentiale - sugestii
+color-up combo-box RoomName + semn de avertizare daca exista camere preferentiale pt clientul respectiv (in dr combo-box)
+algoritm de ocupare a camerelor dupa : asezare, orientare, nivel (etaj), fumator/nefumator
+Parola admin Programatori
+HELP
+In lista cu facturi mai trec suma si data de inceput/sfarsit al eventului
+Legatura intre companii si persoane
+Log. Salvare baza de date.
+Log automat in baza de date. Important de stiut ordinea introducerii datelor.
+Case de marcat
+SAPEL
+dDATECS
+Jurnale pe clientii (pentru facturi) Doc-Im13.10.2014 Implementari - Wunderlist
+https://www.wunderlist.com/#/lists/68184094 2/3
+Import in mentor Bonuri ÷scale
+Ce se intampla daca am gresit
+Adaug consumatie din minibar si facturez. Mai pot sa sterg articolul din minibar? De fapt clientul nu a
+consumat nimic dar eu i-am incasat banii. Am facut storno, i-am dat banii inapoi... dar cum apare
+produsul din minibar?
+Factura de avans D
+refresh avans - la add single event, modify event
+drecalculare suma avans ramasa
+factura storno
+update avans dupa stergere factura avans (tabla person/company)
+update avans daca sterg o factura de cazare (sa restaurez suma de avans) - tot in person/company
+Doar avansul - la stergere factura
+2 rezervari pe aceasi camera. Daca am o rezervare si vreau sa o mut in alta camera sa nu se poata suprascrie. (veri÷care camera
+ocupata(chiar si cu rezervare.)
+Sa pot achita niste servicii daca nu am cazare!!! D
+sala de conferinte!
+sa golesc toate campurile din Add Bill la creare
+dsa completeze automat campul cu delegat la factura pe persoana ÷zica
+- bifa pt "fara cazare" =
+in lista asta trebuie scris cumva in ce versiune e problema si daca s-a rezolvat pe ce versiune D
+Detalii pe articol, cont articol
+se specifica ce tip de articol este.
+sa aduc pe factura doar evenimentele din hotelul curent
+cu posibilitate de alegere?
+Jurnalul receptionerului
+Calendarul cu ture / raport sfarsit de tura/ programarea pontajului
+mesaje catre oricare coleg / sau toti colegii
+to do general sau cameriste
+dupa terminarea turei anunt de logoff cu snooz
+reclamatii
+Butoane de navigare stanga dreapta
+MainForm - imagine cu sageata stg/dr + onMouseOver (sa ti-l arate) & onMouseClick() - sa se duca stg/dr
+FF>la facturare - introducere pret - cu SI fara TVA
+- modi÷cari TVA si taxa hoteliera
+- ! taxa hoteliera in functie de locatia hotelului (statiune balneara sau nu)
+- TVA - introducere in BD pe | TVA | data start | data stop | valoare |
+- raport venituri sintetic
+- modi÷care form setari generale
+Constante impartite in griduri, precum constantele din Mentor
+- rapoarte: sa scrie client & companie/grup
+- arhivare rapoarte (lunar) + back-up DB (mai frecvent)13.10.2014 Implementari - Wunderlist
+https://www.wunderlist.com/#/lists/68184094 3/3
+? am implementat buton de logoff?
+- tab pt printer pe Setting Form
+- test printer la start-up (dk nu exista, o selecteaza pe cea pusa default)
+?Rapoarte & CO: imi arata corect numarul de iteme facturate
+- am 5 pungi de alune, 2 beri samd - ce imi arata pe raport? sau pe factura detaliata
+*** scame : roud-up al sumelor
+sa nu imi arate sume de genul 33.13 lei
